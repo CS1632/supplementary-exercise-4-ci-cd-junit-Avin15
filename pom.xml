@@ -31,14 +31,22 @@
     <connection>scm:git:git://github.com/wonsunahn/CS1632_CICD_JUnit.git</connection>
     <developerConnection>scm:git:ssh://github.com:wonsunahn/CS1632_CICD_JUnit.git</developerConnection>
     <url>http://github.com/wonsunahn/CS1632_CICD_JUnit/tree/master</url>
-   </scm>
+  </scm>
+  
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/CS1632/supplementary-exercise-4-ci-cd-junit-Avin15</url>
+    </repository>
+  </distributionManagement>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jacoco-maven-plugin.version>0.8.9</jacoco-maven-plugin.version>
-    <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
+    <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+    <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
   </properties>
 
   <dependencies>
@@ -122,7 +130,7 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
+        <artifactId>maven-javadoc-plugin-aup10</artifactId>
         <version>${maven-javadoc-plugin.version}</version>
       </plugin>
     </plugins>
